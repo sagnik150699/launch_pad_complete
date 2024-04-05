@@ -85,6 +85,30 @@ jobs:
         with:
           flutter-version: '3.19.5'
 
+      - name: Clean and Get Flutter Dependencies
+        run: |
+          flutter clean
+          flutter pub get
+
+      - name: Generate iOS directory
+        run: flutter create .
+
+      - name: Update Podfile Deployment Target
+        run: sed -i '' 's/platform :ios, .*/platform :ios, '12.0'/g' ios/Podfile
+
+      - name: Install CocoaPods
+        run: |
+          sudo gem install cocoapods
+          cd ios
+          pod install
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
+
+
       - name: Generate iOS directory
         run: flutter create .
 
