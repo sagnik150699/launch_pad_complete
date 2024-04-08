@@ -74,38 +74,38 @@ jobs:
           path: build/windows/runner/Release/
 
 
-  build_ios:
-    runs-on: macOS-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.19.5'
-
-      - name: Clean and Get Flutter Dependencies
-        run: |
-          flutter clean
-          flutter pub get
-
-      - name: Generate iOS directory
-        run: flutter create .
-
-      - name: Update Podfile for iOS Deployment Target
-        run: echo "platform :ios, '12.0'" >> ios/Podfile
-
-
-      - name: Install CocoaPods
-        run: |
-          sudo gem install cocoapods
-          cd ios
-          pod install
-
-      - name: Install Dependencies
-        run: flutter pub get
-
-      - name: Build iOS
-        run: flutter build ios --release
-
+#  build_ios:
+#    runs-on: macOS-latest
+#    steps:
+#      - name: Checkout Repository
+#        uses: actions/checkout@v2
+#
+#      - name: Setup Flutter
+#        uses: subosito/flutter-action@v2
+#        with:
+#          flutter-version: '3.19.5'
+#
+#      - name: Clean and Get Flutter Dependencies
+#        run: |
+#          flutter clean
+#          flutter pub get
+#
+#      - name: Generate iOS directory
+#        run: flutter create .
+#
+#      - name: Update Podfile for iOS Deployment Target
+#        run: echo "platform :ios, '12.0'" >> ios/Podfile
+#
+#
+#      - name: Install CocoaPods
+#        run: |
+#          sudo gem install cocoapods
+#          cd ios
+#          pod install
+#
+#      - name: Install Dependencies
+#        run: flutter pub get
+#
+#      - name: Build iOS
+#        run: flutter build ios --release
+#
