@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text("LaunchPad", style: GoogleFonts.orbitron()),
+            title: Text("LaunchPad",
+                style:
+                    GoogleFonts.orbitron(color: Colors.white, fontSize: 30.0)),
             backgroundColor: Colors.black,
           ),
           backgroundColor: Colors.black,
