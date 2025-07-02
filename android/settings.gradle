@@ -16,8 +16,10 @@ pluginManagement {
     }
 }
 
-include ":app"
-
+// apply flutter plugin loader declaratively
 plugins {
     id "dev.flutter.flutter-plugin-loader"
 }
+
+
+include ":app"
