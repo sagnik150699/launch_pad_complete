@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-app
-          path: build/windows/runner/Release/**
+          path: build/windows/x64/runner/Release/**
 
       # Step 8: Build Android APK
       - name: Build Android APK
