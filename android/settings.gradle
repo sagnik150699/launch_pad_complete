@@ -16,6 +16,7 @@ pluginManagement {
     }
 }
 
+// apply flutter plugin loader declaratively
 plugins {
     id "dev.flutter.flutter-plugin-loader"
 }
