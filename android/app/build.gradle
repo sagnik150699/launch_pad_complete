@@ -1,7 +1,8 @@
 plugins {
     id "com.android.application"
-    // Revert to stable Kotlin Android plugin
-    id "kotlin-android"
+    // Use the fully qualified Kotlin plugin identifier so the
+    // version defined in settings.gradle is picked up correctly.
+    id "org.jetbrains.kotlin.android"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
