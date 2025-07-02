@@ -21,4 +21,5 @@ plugins {
     id "dev.flutter.flutter-plugin-loader"
 }
 
+
 include ":app"
