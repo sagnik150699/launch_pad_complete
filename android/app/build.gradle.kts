@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.codingliquids.launch_pad_complete"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Pin NDK version to satisfy plugins audioplayers_android and
+    // path_provider_android which require NDK 27.0.12077973
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
