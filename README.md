@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sagnik150699/Sagnik-Bhattacharya/master/public/sagnik-bhattacharya.png" alt="Sagnik Bhattacharya" width="180">
+</p>
+Website: [sagnikbhattacharya.com](https://sagnikbhattacharya.com)
+
 # Launch Pad Music App
 
 Welcome to the **Launch Pad Music App**! Developed by Sagnik Bhattacharya from Coding Liquids, this app is a key component of the **"Complete Flutter Guide: Build Android, iOS, and Web"** course. It offers an interactive way to explore and learn Flutter, featuring unique sound pads for a musical journey.
